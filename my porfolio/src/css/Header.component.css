@@ -68,7 +68,7 @@
     .links {
         
         /* flex-direction: column; */
-        gap: 20px; /* Adjusted gap for smaller screens */
+        gap: 25px; /* Adjusted gap for smaller screens */
     }
 
     .links a {
