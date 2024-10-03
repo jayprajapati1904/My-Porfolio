@@ -1,42 +1,92 @@
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f7f7f7;
-    height: 100vh;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;     /* Center the content vertically */
+  padding: 20px;          /* Add some padding */
+  margin-top: 100px;     /* Full height of the viewport */
+  background-color: #242424; /* Dark background color */
+}
+
+.contact-info {
+  color: #fff;
+  max-width: 600px; /* Limit the maximum width */
+  width: 100%;      /* Full width for small screens */
+  padding: 20px;    /* Add padding inside the contact info */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  background-color: #242430; /* Dark background for contact info */
+}
+
+h1 {
+  font-size: 2.5rem; /* Font size for the heading */
+  font-weight: bold;  /* Bold font weight */
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center; /* Center align the heading */
+}
+
+p {
+  font-size: 1.5rem; /* Font size for the paragraph */
+  line-height: 1.7;  /* Line height for spacing between lines */
+  margin: 15px 0;    /* Increased vertical spacing between paragraphs */
+}
+
+strong {
+  font-weight: 600; /* Bold weight for strong elements */
+}
+
+a {
+  text-decoration: none; /* No underline for links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+a:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+.social-media {
+  margin-top: 20px; /* Space above the social media links */
+  text-align: center; /* Center align the icons */
+}
+
+.social-media a {
+  margin: 0 18px; /* Space between icons */
+  font-size: 2rem; /* Size of the icons */
+  color: #007bff; /* Default icon color */
+  transition: color 0.3s, transform 0.3s; /* Smooth color transition and scaling */
+}
+
+.social-media a:hover {
+  color: #0056b3; /* Darker shade on hover */
+  transform: scale(2); /* Slightly increase size on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2.2rem; /* Smaller font size for tablets */
   }
-  
-  .contact-hero img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+
+  p {
+    font-size: 1.3rem; /* Slightly smaller font size for tablets */
   }
-  
-  .contact-info {
-    text-align: center;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  .social-media a {
+    font-size: 1.8rem; /* Adjust icon size for tablets */
   }
-  
-  .contact-info h1 {
-    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; /* Smaller font size for mobile devices */
   }
-  
-  .contact-info p {
-    margin: 8px 0;
+
+  p {
+    font-size: 1rem; /* Smaller font size for paragraphs */
+    margin: 12px 0; /* Adjusted spacing for smaller screens */
   }
-  
-  .contact-info a {
-    color: #007bff;
-    text-decoration: none;
+
+  .social-media a {
+    font-size: 1.5rem; /* Adjust icon size for mobile */
+    margin: 0 10px; /* Space between icons */
   }
-  
-  .contact-info a:hover {
-    text-decoration: underline;
-  }
-  
+}
