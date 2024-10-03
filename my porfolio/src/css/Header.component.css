@@ -1,7 +1,7 @@
 /* General styling for the header */
 .header {
-    background-color: #333; /* Dark background color */
-    padding: 13px; /* Padding around the content */
+    background-color: #333;
+    padding: 13px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -17,13 +17,13 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    max-width: 1200px; /* Maximum width of the content */
+    max-width: 1200px;
 }
 
 /* Styling the head section */
 .head {
     cursor: pointer;
-    font-size: 1.8rem; /* Adjusted to be responsive */
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -34,22 +34,24 @@
 /* Styling the links */
 .links {
     display: flex;
-    gap: 25px; /* Reduced gap for better mobile experience */
+    gap: 25px;
 }
 
-.links a {
+.links a,
+.links .link {
     color: #b3b3b3;
     text-decoration: none;
-    font-size: 1rem; /* Adjusted to be responsive */
+    font-size: 1rem;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 /* Hover effect for the links */
-.links a:hover {
-    color: #c74905; /* Change color on hover */
-    transform: translateY(2px); /* Translate Y-axis by 2px */
-    text-shadow: 0px 0px 1px #ffffff; /* Add white shadow */
+.links a:hover,
+.links .link:hover {
+    color: #c74905;
+    transform: translateY(-2px);
+    text-shadow: 0px 2px 4px #ffffff;
 }
 
 /* Responsive styling for smaller devices */
@@ -62,30 +64,30 @@
     .head {
         cursor: pointer;
         margin-bottom: 20px;
-        font-size: 1.6rem; /* Adjusted for smaller screens */
+        font-size: 1.6rem;
     }
 
     .links {
-        
-        /* flex-direction: column; */
-        gap: 25px; /* Adjusted gap for smaller screens */
+        gap: 25px;
     }
 
-    .links a {
-        font-size: 1.1rem; /* Slightly larger for better readability on small screens */
+    .links a,
+    .links .link {
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 480px) {
     .head {
-        font-size: 1.4rem; /* Further adjusted for very small screens */
+        font-size: 1.4rem;
     }
 
     .links {
-        gap: 10px; /* Reduced gap for very small screens */
+        gap: 10px;
     }
 
-    .links a {
-        font-size: 1rem; /* Adjusted for very small screens */
+    .links a,
+    .links .link {
+        font-size: 1rem;
     }
 }
